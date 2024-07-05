@@ -1,0 +1,13 @@
+@mixin center($type: 'start') {
+    display: flex;
+    align-items: center;
+    @if $type=='vertical'{
+        justify-content: center;
+    }
+    @else if $type=='space'{
+        justify-content: space-around;
+
+    }
+    @else if $type== 'start'{
+        justify-content: flex-start;
+}}
