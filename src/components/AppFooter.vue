@@ -112,6 +112,7 @@ export default{
                 <li><a href="#"><img src="../assets/footer-youtube.png" alt=""></a></li>
                 <li><a href="#"><img src="../assets/footer-pinterest.png" alt=""></a></li>
                 <li><a href="#"><img src="../assets/footer-periscope.png" alt=""></a></li>
+                
                
             </ul>
         </div>
