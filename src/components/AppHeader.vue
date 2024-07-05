@@ -87,6 +87,9 @@ export default{
     justify-content: flex-start;
     align-items: center;
     list-style: none;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: bolder;
   }
   li{
     margin: 1rem;

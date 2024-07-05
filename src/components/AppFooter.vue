@@ -147,10 +147,21 @@ footer{
     justify-content: space-between;
     align-items: center;
     background-color: black;
+    button{
+        background-color: black;
+        border: 1px solid blue;
+        padding: 5px;
+        color: white;
+        text-transform: uppercase;
+    }
     div{
         display: flex;
         justify-content: flex-start;
            align-items: center;
+           h3{
+            color: blue;
+            text-transform: uppercase;
+           }
         ul{
             display: flex;
             justify-content: flex-start;
