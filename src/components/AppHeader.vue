@@ -62,7 +62,7 @@ export default{
 
 <template>
   <div>
-    <img src="/public/dc-logo.png" alt="">
+    <img src="../assets/dc-logo.png" alt="">
     <nav>
     <ul>
       <li v-for="link in links"
@@ -77,7 +77,7 @@ export default{
 
 <style scoped>
   div{
-    width: 100%;
+   
     display: flex;
     justify-content: space-around;
     align-items: center;
