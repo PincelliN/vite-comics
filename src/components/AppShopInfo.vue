@@ -25,15 +25,20 @@ export default {
         lin: "../assets/buy-dc-power-visa.svg",
       }
       ]
+    };
+  },
+  methods: {
+    getImagePath: function (imgPath) {
+      return new URL(imgPath, import.meta.url).href;
     }
   }
-}
+};
 </script>
 
 <template>
   <div>
     <ul>
-      <li v-for="info in infos"><a href="#"><img :src="info.lin">{{ info.testo }}</a></li>
+      <li v-for="info in infos"><a href="#"><img :src="getImagePath(`${info.lin}`)">{{ info.testo }}</a></li>
 
     </ul>
 
@@ -50,6 +55,11 @@ div {
     width: 80%;
     display: flex;
     justify-content: space-around;
+
+    li {
+      text-align: center;
+      vertical-align: middle;
+    }
   }
 }
 </style>
