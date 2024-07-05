@@ -92,6 +92,6 @@ export default{
     margin: 1rem;
   }
   .active{
-    border-bottom: 1px solid blue;
+    border-bottom: 3px solid blue;
   }
 </style>
