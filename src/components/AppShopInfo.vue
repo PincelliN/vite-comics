@@ -11,14 +11,15 @@ export default {
         testo: "Dc Merchandise",
         lin: "../assets/buy-comics-merchandise.png",
       },
+
+      {
+        testo: "Comic Shop Locator",
+        lin: "../assets/buy-comics-subscriptions.png",
+      },
       {
 
         testo: "Subsciption",
         lin: "../assets/buy-comics-shop-locator.png",
-      },
-      {
-        testo: "Comic Shop Locator",
-        lin: "../assets/buy-comics-subscriptions.png",
       },
       {
         testo: "dc power visa",
@@ -38,7 +39,8 @@ export default {
 <template>
   <div>
     <ul>
-      <li v-for="info in infos"><a href="#"><img :src="getImagePath(`${info.lin}`)">{{ info.testo }}</a></li>
+      <li v-for="info in infos"><a href="#"><img :src="getImagePath(`${info.lin}`)"></a><span>{{ info.testo }}</span>
+      </li>
 
     </ul>
 
@@ -57,8 +59,21 @@ div {
     justify-content: space-around;
 
     li {
-      text-align: center;
-      vertical-align: middle;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      gap: 10px;
+
+      img {
+        width: 40px;
+        aspect-ratio: 1/1;
+      }
+
+      span {
+        text-transform: uppercase;
+        font-size: 0.9rem;
+      }
+
     }
   }
 }

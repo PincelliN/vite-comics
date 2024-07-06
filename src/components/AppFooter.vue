@@ -1,7 +1,7 @@
 <script>
-export default{
-    name:"AppFooter",
-    data() {
+export default {
+  name: "AppFooter",
+  data() {
     return {
       links: [{
         text: "characters",
@@ -48,130 +48,162 @@ export default{
         url: "#",
         state: false,
       },
-      {
-        text: "shop",
-        url: "#",
-        state: false,
-      },
+
       ]
     }
   }
 }
 </script>
 <template>
+  <div class="back">
     <div class="list-box">
+      <div>
+        <h4>dc comics</h4>
+        <ul>
+          <li v-for="link in links"> <a :href="link.url"></a>{{ link.text }}</li>
+        </ul>
         <div>
-            <h4>dc comics</h4>
-            <ul>
-                <li v-for="link in links"> <a :href="link.url"></a>{{ link.text }}</li>   
-            </ul>
-            <div>
-                <h4>Shop</h4>
-                <ul>
-                    <li><a href="#"></a>Shop DC</li>
-                    <li><a href="#"></a>Shop DC collectibles</li>
-                </ul>
-            </div>
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#"></a>Shop DC</li>
+            <li><a href="#"></a>Shop DC collectibles</li>
+          </ul>
         </div>
-        <div>
-            <h4>dc</h4>
-            <ul>
-                <li><a href="#"></a>Terms of Use</li>
-                 <li><a href="#"></a>Privacy policy(New)</li>
-                  <li><a href="#"></a>Ad Choices</li>
-                   <li><a href="#"></a>Advertising</li>
-                    <li><a href="#"></a>Jobs</li>
-                     <li><a href="#"></a>Subscriptions</li>
-                      <li><a href="#"></a>Talent Workshops</li>
-                       <li><a href="#"></a>CPSC Certificateas</li>
-                        <li><a href="#"></a>Rating</li>
-                         <li><a href="#"></a>Shop Help</li>
-                          <li><a href="#"></a>Contacts Us</li>
-            </ul>
-        </div>
-        <div>
-            <h4>sites</h4>
-            <ul>
-                <li><a href="#"></a>DC</li>
-                <li><a href="#"></a>MAD Magazine</li>
-                <li><a href="#"></a>Dc Kids</li>
-                <li><a href="#"></a>DC Universe</li>
-                <li><a href="#"></a>DC Power Visa</li>
-            </ul>
-        </div>
-
+      </div>
+      <div>
+        <h4>dc</h4>
+        <ul>
+          <li><a href="#"></a>Terms of Use</li>
+          <li><a href="#"></a>Privacy policy(New)</li>
+          <li><a href="#"></a>Ad Choices</li>
+          <li><a href="#"></a>Advertising</li>
+          <li><a href="#"></a>Jobs</li>
+          <li><a href="#"></a>Subscriptions</li>
+          <li><a href="#"></a>Talent Workshops</li>
+          <li><a href="#"></a>CPSC Certificateas</li>
+          <li><a href="#"></a>Rating</li>
+          <li><a href="#"></a>Shop Help</li>
+          <li><a href="#"></a>Contacts Us</li>
+        </ul>
+      </div>
+      <div>
+        <h4>sites</h4>
+        <ul>
+          <li><a href="#"></a>DC</li>
+          <li><a href="#"></a>MAD Magazine</li>
+          <li><a href="#"></a>Dc Kids</li>
+          <li><a href="#"></a>DC Universe</li>
+          <li><a href="#"></a>DC Power Visa</li>
+        </ul>
+      </div>
     </div>
-    <footer>
-        <button>Sing-up Now</button>
-         
-        <div>
-            <h3>Follow us</h3>
-            <ul>
-                <li><a href="#"><img src="../assets/footer-facebook.png" alt=""></a></li>
-                <li><a href="#"><img src="../assets/footer-twitter.png" alt=""></a></li>
-                <li><a href="#"><img src="../assets/footer-youtube.png" alt=""></a></li>
-                <li><a href="#"><img src="../assets/footer-pinterest.png" alt=""></a></li>
-                <li><a href="#"><img src="../assets/footer-periscope.png" alt=""></a></li>
-                
-               
-            </ul>
-        </div>
-    </footer>
+  </div>
+  <footer>
+    <section>
+      <button>Sing-up Now</button>
+
+      <div>
+        <h3>Follow us</h3>
+        <ul>
+          <li><a href="#"><img src="../assets/footer-facebook.png" alt=""></a></li>
+          <li><a href="#"><img src="../assets/footer-twitter.png" alt=""></a></li>
+          <li><a href="#"><img src="../assets/footer-youtube.png" alt=""></a></li>
+          <li><a href="#"><img src="../assets/footer-pinterest.png" alt=""></a></li>
+          <li><a href="#"><img src="../assets/footer-periscope.png" alt=""></a></li>
+
+
+        </ul>
+      </div>
+    </section>
+  </footer>
 </template>
+
+
 <style scoped>
-.list-box{
+.back {
+  background-image: url(../assets/footer-bg.jpg);
+  background-size: cover;
+
+  background-repeat: no-repeat;
+
+
+  .list-box {
+    background-image: url(../assets/dc-logo-bg.png);
+    background-size: 40%;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
     gap: 10px;
-    background-image:url(../assets/dc-logo-bg.png),url(../assets/footer-bg.jpg);
-    background-size: contain,cover;
-     background-position-x: 70%;
-     background-repeat: no-repeat;
-     padding: 10px;
 
-    h4{
+    div {
+      margin-top: 10px;
+
+      h4 {
         color: white;
         text-transform: uppercase;
         font-weight: bolder;
         text-align: start;
-    }
-    ul{
+        margin-bottom: 5px;
+      }
+
+      ul {
         color: rgb(168, 168, 168);
         list-style: none;
         text-align: start;
         text-transform: capitalize;
+      }
     }
+  }
 }
 
-footer{
+footer {
+
+  background-color: black;
+
+  section {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
-    button{
-        background-color: black;
-        border: 1px solid blue;
-        padding: 5px;
-        color: white;
-        text-transform: uppercase;
+
+    button {
+      background-color: black;
+      border: 1px solid blue;
+      padding: 5px;
+      color: white;
+      text-transform: uppercase;
     }
-    div{
+
+    div {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      h3 {
+        color: blue;
+        text-transform: uppercase;
+      }
+
+      ul {
         display: flex;
         justify-content: flex-start;
-           align-items: center;
-           h3{
-            color: blue;
-            text-transform: uppercase;
-           }
-        ul{
-            display: flex;
-            justify-content: flex-start;
-            list-style: none;
-               align-items: center;
-            li{
-                margin: 1rem;
-            }
+        list-style: none;
+        align-items: center;
+
+        li {
+          margin: 1rem;
+
+          img {
+            width: 25px;
+          }
         }
+      }
     }
+  }
 }
 </style>

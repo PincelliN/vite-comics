@@ -1,7 +1,7 @@
-<script >
-export default{
+<script>
+export default {
   name: "AppHeader",
-   data() {
+  data() {
     return {
       links: [{
         text: "characters",
@@ -64,37 +64,55 @@ export default{
   <div>
     <img src="../assets/dc-logo.png" alt="">
     <nav>
-    <ul>
-      <li v-for="link in links"
-      :class="link.state ? 'active':''">
-        <a :href="link.url">{{link.text}}</a>
-      </li>
-      
-    </ul>
-  </nav>
+      <ul>
+        <li v-for="link in links" :class="link.state ? 'active' : ''">
+          <a :href="link.url">{{ link.text }}</a>
+        </li>
+
+      </ul>
+    </nav>
   </div>
 </template>
 
 <style scoped>
-  div{
-   
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+div {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+
+  img {
+    width: 50px;
   }
-  ul{
+
+  ul {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     list-style: none;
     text-transform: uppercase;
-    font-size: small;
+    font-size: 0.6rem;
     font-weight: bolder;
+
+    li {
+      margin: 0.5rem;
+      padding-bottom: 1.5rem;
+      color: black;
+    }
+
+
+
+    .active {
+      border-bottom: 3px solid blue;
+      color: blue !important;
+    }
   }
-  li{
-    margin: 1rem;
-  }
-  .active{
-    border-bottom: 3px solid blue;
-  }
+
+
+
+
+}
 </style>
