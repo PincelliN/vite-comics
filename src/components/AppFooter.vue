@@ -204,7 +204,7 @@ export default {
       <div v-for="shoparea in shopAreas">
         <h4>{{ shoparea.area }}</h4>
         <ul>
-          <li v-for="link in shoparea.links"> <a :href="link.url"></a>{{ link.text }}</li>
+          <li v-for="link in shoparea.links"><a :href="link.url">{{ link.text }}</a></li>
         </ul>
       </div>
     </div>
@@ -262,6 +262,10 @@ export default {
       ul {
         color: rgb(168, 168, 168);
         text-transform: capitalize;
+
+        li:hover {
+          color: white;
+        }
       }
     }
   }
@@ -305,6 +309,7 @@ footer {
 
         img {
           width: 25px;
+          color: white;
         }
       }
     }

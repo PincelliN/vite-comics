@@ -65,7 +65,7 @@ export default {
     <img src="../assets/dc-logo.png" alt="">
     <nav>
       <ul>
-        <li v-for="link in links" :class="link.state ? 'active' : ''">
+        <li v-for="link in links" :class="link.state === true ? 'active' : ''">
           <a :href="link.url">{{ link.text }}</a>
         </li>
       </ul>
@@ -95,9 +95,10 @@ div {
     font-size: 0.6rem;
     font-weight: bolder;
 
+
     li {
-      margin: 0.5rem;
-      padding-bottom: 1.5rem;
+
+      padding: 15px 8px;
       color: black;
     }
 
