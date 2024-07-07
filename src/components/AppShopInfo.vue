@@ -47,9 +47,11 @@ export default {
   </div>
 </template>
 <style lang="scss" scoped>
+@use'/src/styles/partials/variables' as*;
+
 div {
-  background-color: cornflowerblue;
-  color: white;
+  background-color: $second-color;
+  color: $fourth-color;
 
   ul {
     margin: 0 auto;

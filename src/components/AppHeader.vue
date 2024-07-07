@@ -74,6 +74,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use'/src/styles/partials/variables' as*;
+
 div {
 
   display: flex;
@@ -99,12 +101,12 @@ div {
     li {
 
       padding: 15px 8px;
-      color: black;
+      color: $primary;
     }
 
     .active {
-      border-bottom: 3px solid blue;
-      color: blue;
+      border-bottom: 3px solid $third-color;
+      color: $third-color;
     }
   }
 }

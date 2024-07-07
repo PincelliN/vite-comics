@@ -227,6 +227,8 @@ export default {
 
 
 <style lang="scss" scoped>
+@use'/src/styles/partials/variables' as*;
+
 .back {
   background-image: url(../assets/footer-bg.jpg);
   background-size: cover;
@@ -253,18 +255,18 @@ export default {
       margin-top: 10px;
 
       h4 {
-        color: white;
+        color: $fourth-color;
         text-transform: uppercase;
         font-weight: bolder;
         margin-bottom: 5px;
       }
 
       ul {
-        color: rgb(168, 168, 168);
+        color: $fifth-color;
         text-transform: capitalize;
 
         li:hover {
-          color: white;
+          color: $fourth-color;
         }
       }
     }
@@ -273,7 +275,7 @@ export default {
 
 footer {
 
-  background-color: black;
+  background-color: $first-color;
 
   section {
     width: 80%;
@@ -283,10 +285,10 @@ footer {
     align-items: center;
 
     button {
-      background-color: black;
-      border: 1px solid blue;
+      background-color: $first-color;
+      border: 1px solid $third-color;
       padding: 5px;
-      color: white;
+      color: $fourth-color;
       text-transform: uppercase;
     }
 
@@ -296,7 +298,7 @@ footer {
       align-items: center;
 
       h3 {
-        color: blue;
+        color: $third-color;
         text-transform: uppercase;
       }
 
@@ -309,7 +311,6 @@ footer {
 
         img {
           width: 25px;
-          color: white;
         }
       }
     }

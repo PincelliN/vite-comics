@@ -6,11 +6,13 @@ export default {
 <template>
     <h1> Content Goes here </h1>
 </template>
-<style scoped>
+<style lang="scss" scoped>
+@use'/src/styles/partials/variables' as*;
+
 h1 {
     text-align: center;
     margin: 0 auto;
-    color: white;
+    color: $fourth-color;
     padding: 10px;
 
 }
