@@ -68,13 +68,12 @@ export default {
         <li v-for="link in links" :class="link.state ? 'active' : ''">
           <a :href="link.url">{{ link.text }}</a>
         </li>
-
       </ul>
     </nav>
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 div {
 
   display: flex;
@@ -92,7 +91,6 @@ div {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    list-style: none;
     text-transform: uppercase;
     font-size: 0.6rem;
     font-weight: bolder;
@@ -103,16 +101,10 @@ div {
       color: black;
     }
 
-
-
     .active {
       border-bottom: 3px solid blue;
-      color: blue !important;
+      color: blue;
     }
   }
-
-
-
-
 }
 </style>

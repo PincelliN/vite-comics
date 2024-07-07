@@ -46,14 +46,13 @@ export default {
 
   </div>
 </template>
-<style scoped>
+<style lang="scss" scoped>
 div {
   background-color: cornflowerblue;
   color: white;
 
   ul {
     margin: 0 auto;
-    list-style: none;
     width: 80%;
     display: flex;
     justify-content: space-around;
@@ -62,7 +61,7 @@ div {
       display: flex;
       align-items: center;
       padding: 10px;
-      gap: 10px;
+      gap: 5px;
 
       img {
         width: 40px;

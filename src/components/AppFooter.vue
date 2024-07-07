@@ -156,11 +156,48 @@ export default {
         ]
       }
       ],
-
+      socials: [
+        {
+          title: "Facebook",
+          logo: "../assets/footer-facebook.png",
+          state: false,
+          url: "#",
+        },
+        {
+          title: "Twitter",
+          logo: "../assets/footer-twitter.png",
+          state: false,
+          url: "#",
+        },
+        {
+          title: "You Tube",
+          logo: "../assets/footer-youtube.png",
+          state: false,
+          url: "#",
+        },
+        {
+          title: "Pinterest",
+          logo: "../assets/footer-pinterest.png",
+          state: false,
+          url: "#",
+        }, {
+          title: "Periscope",
+          logo: "../assets/footer-periscope.png",
+          state: false,
+          url: "#",
+        }
+      ],
+    }
+  },
+  methods: {
+    getImagePath: function (imgPath) {
+      return new URL(imgPath, import.meta.url).href;
     }
   }
 }
 </script>
+
+
 <template>
   <div class="back">
     <div class="list-box">
@@ -175,16 +212,12 @@ export default {
   <footer>
     <section>
       <button>Sing-up Now</button>
-
       <div>
         <h3>Follow us</h3>
         <ul>
-          <li><a href="#"><img src="../assets/footer-facebook.png" alt=""></a></li>
-          <li><a href="#"><img src="../assets/footer-twitter.png" alt=""></a></li>
-          <li><a href="#"><img src="../assets/footer-youtube.png" alt=""></a></li>
-          <li><a href="#"><img src="../assets/footer-pinterest.png" alt=""></a></li>
-          <li><a href="#"><img src="../assets/footer-periscope.png" alt=""></a></li>
-
+          <li v-for="social in socials"><a :href="social.url"><img :src="getImagePath(`${social.logo}`)"
+                :alt="social.title"></a>
+          </li>
 
         </ul>
       </div>
@@ -193,17 +226,15 @@ export default {
 </template>
 
 
-<style scoped>
+<style lang="scss" scoped>
 .back {
   background-image: url(../assets/footer-bg.jpg);
   background-size: cover;
-
   background-repeat: no-repeat;
-
 
   .list-box {
     background-image: url(../assets/dc-logo-bg.png);
-    background-size: 40%;
+    background-size: 440px;
     background-position: 100% 50%;
     background-repeat: no-repeat;
     display: flex;
@@ -212,19 +243,14 @@ export default {
     align-items: flex-start;
     align-content: flex-start;
     flex-wrap: wrap;
-    height: 294px;
+    height: 300px;
     width: 80%;
     margin: 0 auto;
     padding: 10px;
     gap: 10px;
 
-
-
     div {
       margin-top: 10px;
-
-
-
 
       h4 {
         color: white;
@@ -235,11 +261,7 @@ export default {
 
       ul {
         color: rgb(168, 168, 168);
-        list-style: none;
         text-transform: capitalize;
-
-
-
       }
     }
   }
@@ -277,16 +299,13 @@ footer {
       ul {
         display: flex;
         justify-content: flex-start;
-        list-style: none;
         align-items: center;
         gap: 8px;
         padding: 10px;
 
-
         img {
           width: 25px;
         }
-
       }
     }
   }
