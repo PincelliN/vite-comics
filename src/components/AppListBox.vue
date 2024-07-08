@@ -90,7 +90,6 @@ export default {
     <div>
         <div class="Box-Card">
             <Card v-for="comic in comics" :img="comic.thumb" :Title="comic.series" />
-
         </div>
         <button> Load More</button>
     </div>
@@ -115,8 +114,8 @@ div {
     }
 
     button {
-        color: white;
-        background-color: blue;
+        color: $fourth-color;
+        background-color: $third-color;
         border: none;
         margin: 10px auto;
         padding: 10px;
