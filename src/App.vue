@@ -1,4 +1,5 @@
 <script>
+import "@fontsource/roboto";
 import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue'
 import AppJumbodron from './components/AppJumbodron.vue';
@@ -32,6 +33,7 @@ export default {
 
 <style lang="scss">
 @use'./styles/general.scss' as *;
+
 
 main {
   background-color: black;

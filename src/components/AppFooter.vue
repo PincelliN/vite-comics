@@ -245,7 +245,7 @@ export default {
     align-items: flex-start;
     align-content: flex-start;
     flex-wrap: wrap;
-    height: 300px;
+    height: 330px;
     width: 80%;
     margin: 0 auto;
     padding: 10px;

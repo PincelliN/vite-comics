@@ -119,6 +119,7 @@ div {
         border: none;
         margin: 10px auto;
         padding: 10px;
+        text-transform: uppercase;
 
     }
 }
