@@ -3,7 +3,7 @@ import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue'
 import AppListBox from './components/AppListBox.vue';
 import AppShopInfo from './components/AppShopInfo.vue';
-import Card from './components/Card.vue';
+
 
 
 
@@ -11,7 +11,6 @@ export default {
   name: "App",
   components: {
     AppHeader,
-    Card,
     AppListBox,
     AppShopInfo,
     AppFooter,
@@ -22,6 +21,11 @@ export default {
 <template>
   <AppHeader />
   <main>
+    <div class="jumbodron">
+      <div>
+        <button class="target">Currents Series</button>
+      </div>
+    </div>
     <AppListBox />
     <AppShopInfo />
   </main>
@@ -33,5 +37,30 @@ export default {
 
 main {
   background-color: black;
+
+  .jumbodron {
+    background-image: url(../src/assets/jumbotron.jpg);
+    background-size: cover;
+    height: 50vh;
+
+
+    div {
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
+      position: relative;
+
+
+      .target {
+        color: white;
+        padding: 10px;
+        border: 1px solid blue;
+        background-color: blue;
+        position: absolute;
+        bottom: -20px;
+        text-transform: uppercase;
+      }
+    }
+  }
 }
 </style>

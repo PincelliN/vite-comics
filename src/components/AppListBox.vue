@@ -121,6 +121,7 @@ div {
         border: none;
         margin: 0p auto;
         padding: 10px;
+        text-transform: uppercase;
     }
 }
 </style>

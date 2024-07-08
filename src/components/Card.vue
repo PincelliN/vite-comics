@@ -25,7 +25,6 @@ export default {
     color: white;
 
     img {
-        width: 100%;
         object-fit: cover;
     }
 
