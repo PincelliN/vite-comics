@@ -102,24 +102,23 @@ div {
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    padding: 10px;
+
 
     .Box-Card {
+        margin: 30px 0;
         width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: baseline;
         flex-wrap: wrap;
         align-content: flex-start;
-
-
     }
 
     button {
         color: white;
         background-color: blue;
         border: none;
-        margin: 0p auto;
+        margin: 10px auto;
         padding: 10px;
 
     }
