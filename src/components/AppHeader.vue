@@ -101,7 +101,7 @@ div {
     li {
 
       padding: 15px 8px;
-      color: $primary;
+      color: $first-color;
     }
 
     .active {
