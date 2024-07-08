@@ -49,15 +49,16 @@ main {
       height: 100%;
       margin: 0 auto;
       position: relative;
-
+      color: white;
 
       .target {
-        color: white;
-        padding: 10px;
+
         border: 1px solid blue;
         background-color: blue;
         position: absolute;
         bottom: -20px;
+        padding: 10px;
+        color: white;
         text-transform: uppercase;
       }
     }

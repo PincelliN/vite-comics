@@ -7,7 +7,7 @@ export default {
         return {
             comics: [
                 {
-                    "thumb": "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
+                    "thumb": "https://m.media-amazon.com/images/I/91PuGJyevfL._SY425_.jpg",
                     "price": "$19.99",
                     "series": "Action Comics",
                     "type": "comic book",
@@ -121,7 +121,7 @@ div {
         border: none;
         margin: 0p auto;
         padding: 10px;
-        text-transform: uppercase;
+
     }
 }
 </style>
