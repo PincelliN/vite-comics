@@ -25,6 +25,11 @@ export default {
     color: $fourth-color;
     margin: 5px;
 
+    img {
+        width: 100%;
+        aspect-ratio: 1 / 1.3;
+    }
+
     h5 {
         text-align: center;
     }
